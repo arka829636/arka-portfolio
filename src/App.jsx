@@ -477,7 +477,7 @@ function App() {
           {/* GITHUB */}
 
           <a
-            href="https://github.com/YOUR_GITHUB_USERNAME"
+            href="https://github.com/arka829636"
             target="_blank"
             rel="noreferrer"
             className="contact-card"
