@@ -34,10 +34,10 @@ const projects = [
   },
   {
     number: "02",
-    title: "Data Science Analytics Dashboard",
+    title: "HR Analytics Dashboard",
     description:
-      "An interactive dashboard for exploring datasets, identifying trends, visualizing patterns and generating business insights.",
-    tech: "Python • Pandas • NumPy • Power BI",
+      "An interactive HR dashboard for analyzing employee data, attrition patterns, workforce trends and generating actionable HR insights.",
+    tech: "Power BI • Excel • Data Analysis",
   },
   {
     number: "03",
