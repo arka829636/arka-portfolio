@@ -70,7 +70,7 @@ const projects = [
     title: "AI Personal Finance Assistant",
     description:
       "An intelligent application that analyzes personal expenses and provides data-driven financial insights and recommendations.",
-    tech: "Python • AI • RAG • Streamlit",
+    tech: "Python • Data Science • Rule-Based AI • Streamlit",
     link: "https://github.com/arka829636/ai-personal-finance-assistant",
     linkLabel: "View Repository →",
   },
@@ -960,10 +960,7 @@ function App() {
             </span>
 
             <p>
-              Continuously strengthening programming
-              fundamentals while exploring machine
-              learning techniques and practical
-              data-driven applications.
+              Currently exploring advanced topics in AI, RAG, LLMs while building intelligent applications.
             </p>
 
           </div>
@@ -973,7 +970,7 @@ function App() {
             <span className="learning-state-dot" />
 
             <span>
-              ALWAYS LEARNING
+              ALWAYS EXPLORING
             </span>
 
           </div>
