@@ -67,10 +67,10 @@ const projects = [
   {
     number: "01",
     category: "AI • FINTECH",
-    title: "AI Personal Finance Assistant",
+    title: "Finlytic-AI",
     description:
-      "An intelligent application that analyzes personal expenses and provides data-driven financial insights and recommendations.",
-    tech: "Python • Data Science • Rule-Based AI • Streamlit",
+      "AI-powered personal finance assistant for analyzing spending, detecting anomalies, predicting expenses, and retrieving financial insights.",
+    tech: "Data Science • Machine Learning  • RAG • LLM",
     link: "https://github.com/arka829636/ai-personal-finance-assistant",
     linkLabel: "View Repository →",
   },
