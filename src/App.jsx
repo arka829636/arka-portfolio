@@ -99,6 +99,7 @@ const projects = [
 function App() {
   const [loading, setLoading] = React.useState(true);
   const [progress, setProgress] = React.useState(0);
+  const [loaderExiting, setLoaderExiting] = React.useState(false);
   const [liveTime, setLiveTime] = React.useState(new Date());
   const [scrollProgress, setScrollProgress] = React.useState(0);
   const [mobileNavOpen, setMobileNavOpen] = React.useState(false);
@@ -201,26 +202,35 @@ function App() {
   }, []);
 
   React.useEffect(() => {
-    let value = 0;
+  let value = 0;
 
-    setProgress(0);
+  setProgress(0);
+  setLoaderExiting(false);
 
-    const interval = setInterval(() => {
-      value += 1;
+  const interval = setInterval(() => {
+    value += 1;
 
-      setProgress(value);
+    setProgress(value);
 
-      if (value >= 100) {
-        clearInterval(interval);
+    if (value >= 100) {
+      clearInterval(interval);
 
+      // Hold at 100% for a moment
+      setTimeout(() => {
+        // Start the exit animation
+        setLoaderExiting(true);
+
+        // Remove loader after animation finishes
         setTimeout(() => {
           setLoading(false);
-        }, 550);
-      }
-    }, 30);
+        }, 1100);
 
-    return () => clearInterval(interval);
-  }, []);
+      }, 500);
+    }
+  }, 30);
+
+  return () => clearInterval(interval);
+}, []);
 
   React.useEffect(() => {
     if (loading) return;
@@ -375,7 +385,11 @@ function App() {
       {/* LOADER */}
 
       {loading && (
-        <div className="portfolio-loader">
+  <div
+    className={`portfolio-loader ${
+      loaderExiting ? "loader-exiting" : ""
+    }`}
+  >
           <div className="loader-grid" />
 
           <div className="loader-glow loader-glow-one" />
