@@ -767,7 +767,9 @@ function App() {
         <p className="about-text">
           
 
-I'm currently pursuing a Master of Computer Applications (MCA), building on a strong academic foundation in Mathematics. I leverage analytical thinking, statistical reasoning, and technology to solve problems and derive meaningful insights from data. My interests lie in data analytics, data science, and developing intelligent applications.
+
+I'm currently pursuing a Master of Computer Applications (MCA), building on a strong foundation in Mathematics. With an interest in statistical analysis, data-driven problem-solving, and machine learning, I aim to transform complex data into meaningful insights. I enjoy exploring data, developing analytical solutions, and building intelligent applications that address real-world challenges.
+
 
 
         </p>
@@ -843,9 +845,7 @@ I'm currently pursuing a Master of Computer Applications (MCA), building on a st
             </h3>
 
             <p>
-              Exploring machine learning and AI
-              to build practical intelligent
-              applications.
+              Exploring machine learning, predictive modeling, and AI techniques to develop intelligent solutions for real-world problems.
             </p>
 
           </div>
