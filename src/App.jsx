@@ -67,7 +67,7 @@ const projects = [
   {
     number: "01",
     category: "AI • FINTECH",
-    title: "Finlytic-AI",
+    title: "Finlytic AI — Intelligent Personal Finance Assistant",
     description:
       "AI-powered personal finance assistant for analyzing spending, detecting anomalies, predicting expenses, and retrieving financial insights.",
     tech: "Data Science • Machine Learning  • RAG • LLM",
@@ -76,13 +76,13 @@ const projects = [
   },
   {
     number: "02",
-    category: "HR • ANALYTICS",
-    title: "HR Analytics Dashboard",
+    category: "SUPPLY CHAIN • ANALYTICS",
+    title: "SupplyShield — Supply Chain Analytics & Risk Intelligence",
     description:
-      "An interactive HR dashboard for analyzing employee data, attrition patterns, workforce trends and generating actionable HR insights.",
-    tech: "Power BI • Excel • Data Analysis",
-    link: "https://github.com/arka829636",
-    linkLabel: "GitHub Profile →",
+      "An interactive analytics solution that transforms supply chain data into actionable insights on supplier performance, inventory, and operational risks.",
+    tech: "SQL · MySQL · Power BI · DAX · Data Analytics · Data Visualization",
+    link: "https://github.com/arka829636/SupplyShield.git",
+    linkLabel: "View Repository →",
   },
   {
     number: "03",
@@ -578,7 +578,7 @@ function App() {
               intelligent
             </span>
 
-            <span className="hero-line hero-gradient">
+            <span className="hero-line hero-amber">
               solutions.
             </span>
 
