@@ -765,12 +765,9 @@ function App() {
         </h2>
 
         <p className="about-text">
-          I&apos;m currently pursuing MCA and
-          developing my skills in Data Science,
-          Artificial Intelligence and Machine
-          Learning. With a background in Mathematics,
-          I enjoy solving complex problems using
-          mathematics, statistics, data and technology.
+          
+I'm currently pursuing my MCA, building on a strong foundation in Mathematics. I enjoy using data, statistics, and technology to solve problems and uncover meaningful insights. My interests include data analytics, data science, and intelligent applications.
+
         </p>
 
         <div className="about-cards">
