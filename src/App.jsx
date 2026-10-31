@@ -80,7 +80,7 @@ const projects = [
     title: "SupplyShield — Supply Chain Analytics & Risk Intelligence",
     description:
       "An interactive supply chain analytics solution that transforms operational data into insights on supplier performance, inventory, and supply chain risks.",
-    tech: "SQL · MySQL · Power BI · DAX · Data Analytics · Data Visualization",
+    tech: "SQL · MySQL · Power BI · DAX · Data Analytics",
     link: "https://github.com/arka829636/SupplyShield.git",
     linkLabel: "View Repository →",
   },
