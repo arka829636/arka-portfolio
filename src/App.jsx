@@ -69,7 +69,7 @@ const projects = [
     category: "AI • FINTECH",
     title: "Finlytic AI — Intelligent Personal Finance Assistant",
     description:
-      "AI-powered personal finance assistant for analyzing spending, detecting anomalies, predicting expenses, and retrieving financial insights.",
+      "An intelligent personal finance assistant for tracking expenses, analyzing spending patterns, and generating actionable financial insights.",
     tech: "Data Science • Machine Learning  • RAG • LLM",
     link: "https://github.com/arka829636/ai-personal-finance-assistant",
     linkLabel: "View Repository →",
@@ -79,7 +79,7 @@ const projects = [
     category: "SUPPLY CHAIN • ANALYTICS",
     title: "SupplyShield — Supply Chain Analytics & Risk Intelligence",
     description:
-      "An interactive analytics solution that transforms supply chain data into actionable insights on supplier performance, inventory, and operational risks.",
+      "An interactive supply chain analytics solution that transforms operational data into insights on supplier performance, inventory, and supply chain risks.",
     tech: "SQL · MySQL · Power BI · DAX · Data Analytics · Data Visualization",
     link: "https://github.com/arka829636/SupplyShield.git",
     linkLabel: "View Repository →",
