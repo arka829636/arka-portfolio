@@ -539,12 +539,12 @@ function App() {
 
         </div>
 
-        <a
+<a
   className="resume-btn"
   href="/resume.pdf"
   download="Arka-Mondal-Resume.pdf"
 >
-  Resume ↓
+  Download Resume ↓
 </a>
 
       </nav>
