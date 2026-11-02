@@ -553,3 +553,283 @@ html,body,a,button{cursor:none}.custom-cursor{position:fixed;inset:0;z-index:100
   border-color: rgba(245, 158, 11, 0.35);
   background: rgba(245, 158, 11, 0.07);
 }
+
+
+/* =========================================================
+   RESPONSIVE REFINEMENTS — preserve the existing visual style
+   Desktop remains the original layout; tablet/mobile reflow only.
+   ========================================================= */
+
+/* Tablet and compact desktop */
+@media (max-width: 1100px) {
+  .hero {
+    width: calc(100% - 40px);
+    gap: 28px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, .9fr);
+  }
+
+  .hero-editorial {
+    font-size: clamp(42px, 5.2vw, 66px);
+  }
+
+  .hero-visual {
+    min-width: 0;
+    height: 500px;
+  }
+
+  .scene {
+    transform: scale(.86);
+  }
+
+  .about-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .about-cards .info-card:nth-child(4),
+  .about-cards .info-card:nth-child(5) {
+    grid-column: auto;
+  }
+}
+
+/* Tablet portrait / narrow laptop */
+@media (max-width: 950px) {
+  .hero {
+    width: calc(100% - 36px);
+    min-height: 0;
+    padding: 76px 0 34px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-tag {
+    margin-inline: auto;
+  }
+
+  .hero-description {
+    margin-inline: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .terminal {
+    margin-inline: auto;
+  }
+
+  .hero-visual {
+    width: 100%;
+    height: 480px;
+    min-width: 0;
+  }
+
+  .section {
+    width: calc(100% - 36px);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skill-groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .learning-state-card {
+    grid-template-columns: 60px minmax(0, 1fr);
+  }
+
+  .learning-state-status {
+    grid-column: 1 / -1;
+    border-left: 0;
+    border-top: 1px solid #ffffff0d;
+    padding-top: 15px;
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .live-status-bar {
+    width: calc(100% - 20px);
+    min-height: 58px;
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .navbar {
+    width: calc(100% - 20px);
+    padding: 10px 12px;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    width: calc(100% - 30px);
+    min-height: 0;
+    padding: 58px 0 24px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .hero-editorial {
+    font-size: clamp(34px, 9vw, 50px);
+    line-height: .98;
+  }
+
+  .hero-line {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .hero-description {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+
+  /* Keep the illustration's internal geometry intact, but center and scale
+     the complete 560px scene as one object inside a mobile-sized viewport. */
+  .hero-visual {
+    width: 100%;
+    height: 360px;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    perspective: none;
+  }
+
+  .hero-visual .scene {
+    position: absolute;
+    width: 560px;
+    height: 560px;
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    flex: none;
+    transform: translate(-50%, -50%) scale(.60) !important;
+    transform-origin: center center;
+    animation: none !important;
+  }
+
+  .data-panel {
+    display: none;
+  }
+
+  .section {
+    width: calc(100% - 30px);
+    padding: 64px 0;
+    scroll-margin-top: 76px;
+  }
+
+  .section h2 {
+    font-size: clamp(33px, 8.8vw, 40px);
+    letter-spacing: -1.8px;
+  }
+
+  .about-section {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
+  .about-cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .about-cards .info-card:nth-child(n) {
+    grid-column: auto;
+    width: auto;
+    justify-self: stretch;
+  }
+
+  .info-card {
+    min-height: 0;
+  }
+
+  .projects-grid,
+  .skill-groups,
+  .contact-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-card {
+    min-height: 0;
+  }
+
+  .skill-center,
+  .skill-orbit {
+    display: none;
+  }
+
+  .learning-state-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .learning-state-status {
+    grid-column: auto;
+  }
+
+  .contact-card {
+    padding: 16px;
+  }
+
+  footer {
+    width: calc(100% - 30px);
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+/* Narrow phones */
+@media (max-width: 380px) {
+  .hero-visual {
+    height: 320px;
+  }
+
+  .hero-visual .scene {
+    transform: translate(-50%, -50%) scale(.53) !important;
+  }
+
+  .hero-editorial {
+    font-size: 34px;
+  }
+
+  .section h2 {
+    font-size: 32px;
+  }
+
+  .live-date {
+    display: none;
+  }
+}
+
+/* Touch devices: avoid custom cursor on phones/tablets */
+@media (hover: none), (pointer: coarse) {
+  html,
+  body,
+  a,
+  button {
+    cursor: auto;
+  }
+
+  .custom-cursor {
+    display: none !important;
+  }
+}
